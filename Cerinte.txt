@@ -1,0 +1,27 @@
+1. Companie de transport in comun - STB.
+
+Trebuie implementat un modul care sa creeze obiecte de tipul MijlocTransport: Autobuz, Tramvai, Troleibuz
+Modulul trebuie sa ajute la crearea de obiecte de familia de clase MijlocTransport
+Tipurile de transport sunt salvate intr-un enum{Autobuz, Tramvai, Troleibuz}.
+
+2. Pentru crearea de obiecte de tip Autobuz sunt consumate foarte multe resurse. Din acest motiv trebuie propusa o varianta prin care daca exista deja un obiect creat, sa fie folosit acest obiect pentru viitoarele obiecte, fara a mai fi nevoie de crearea de la 0 a obiectelor de tip Autobuz.
+
+Aceeasi regula se va aplica si pentru alte tipuri de mijloace de transport.
+
+3. Pentru obiectele de tipul AutobuzLinie se doreste ca in momentul in care au fost create obiectele de acest tip sa nu mai poata fi modificate. De asemenea pentru crearea unui obiect de tipul AutobuzLinie trebuie precizat modelul de autobuz folosit, soferul care il va conduce, daca va avea opriri la capat de linie, daca deschide usile in fiecare statie fara ca pasagerii sa solicite acest lucru, textul afisat de ecranul derulator si alte elemente. Unele atribute sunt optionale avand o valoare prestabilita. Se doreste implementarea modulului care se va ocupa de initializarea acestor obiecte, nefiind necesara introducerea atributelor optionale, iar obiectul odata creat sa nu mai poata fi modificat.
+
+4. Compania de transport in comun preia si infrastructura de Metrou a orasului si doreste ca biletele sau abonamentele achizitionate de catre clienti pentru transportul terestru sa poata fi folosite si pentru transportul subteran. Sisteme software ale celor doua moduri de transport sunt diferite si se doreste implementarea unui modul care sa permita utilizareacelor doua sisteme fara a le modifica. Modulul implementat trebuie sa se ocupe de validarea biletelor sau si a abonamentelor.
+
+5. Autobuzele vin din fabrica cu 3 usi: usa din fata, usa de la mijloc si usa din spate. Pentru fiecare usa, soferul are cate un buton pentru punerea usilor in modul liber (sa poata fi deschise la solicitarea calatorilor) si un alt buton pentru deschiderea fortata a acestora. In total soferul are 6 butoane. Se doreste implementarea unui modul care sa simplifice procesul pentru sofer si sa aiba un buton pentru punerea tuturor usilor in modul liber si un alt buton pentru deschiderea fortata a tuturor usilor.
+
+6. Pentru a gestiona garanția asigurată pentru fiecare autobuz disponibil în cadrul flotei companiei, se dorește implementrea unei soluții ce permite vizualizarea fiecărui autobuz în funcție de tipul acestuia si grupul pentru care este destinat. Structura definește o ierarhie între tipurile de autobuze din flotă, grupate pe dimensiunea acestora (grupuri mici – 10 locuri, grupuri medii – 30 locuri, grupuri mari – 50 locuri). Fiecare autobuz este descris de producător, model si număr de locuri.
+
+7. Compania doreste ca modulul de printare al biletelor sa permita cu ocazia anumitor zile nationale sa printeze pe bilet un mesaj de "La multi ani". Se doreste implementarea acestui modul care sa adauge functionalitatea de printare mesaj customizat. Exista posibilitatea ca aceasta functionalitate sa nu fie folosita, si din acest motiv se doreste sa fie optionala, fara modificarea codului existent.
+
+8. Pentru autobuzele de noapte se doreste ca oprirea in statie sa se faca doar daca exista persoane in autobuz. In caz contrar autobuzul se retrage la autobaza fara sa mai realizeze opriri. Sa se implementeze modul care va permite oprirea in statie a autobuzelor doar daca exista calatori in autobuz.
+
+9.  Pentru fiecare AutobuzLinie sunt salvate in memorie, informatii precum: model autobuz, an fabricatie, numar locuri, numar linie,prima statie, ultima statie. Aceste informatii sunt salvate pentru fiecare AutobuzLinie din oras. Se doreste implementarea unui modul care sa asigure gestiunea in mod optim a memoriei, tinandu-se cont de faptul ca anumite informatii sunt redundante, deoarece pe o linie vor merge mai multe autobuze.
+
+10. Un calator are posibilitatea sa plateasca cu cardul de calatorii, cardul bancar sau prin SMS. Trebuie implementat modulul dintr-un validator calatorie care sa permita plata calatoriei printr-una din cele trei metode. Calatorul va decide modul de plata atunci cand se urca in mijlocul de transport.
+
+11. Se doreste implementarea unei aplicatii prin care utilizatorii se pot inregistra intr-o lista de calatori care sa fie anuntati atunci cand autobuzul pleaca de la capat de linie. Autobuzul cand pleaca in cursa de la capatul de linie trebuie sa anunte toti acesti calatori că s-a pus in miscare. Calatorii vor putea in acest mod sa stie cand trebuie sa astepte autobuzul in statie.
