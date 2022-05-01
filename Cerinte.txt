@@ -64,3 +64,7 @@ Va putea pleca in cursa doar dupa ce ajunge la capat de linie.
 De asemneea un autobuz care este la reparat va putea sa plece in cursa doar dupa ce este reparat.
 Un autobuz care nu este in cursa nu are cum sa ajunga la capat de linie.
 Modulul implementat trebuie sa tina cont de toate aceste conditii.
+
+16. In cadrul unei autobaze este ceruta implementarea unui modul software prin care operatorul sa poata solicita plecarile pentru fiecare autobuz de la capat de linie pe ce linie va merge (numarul liinie).
+Comenzile de plecare pe o anumita linie vor fi salvate intr-o colectie, iar in momentul in care autobuzl este disponibil acesta va prelua comanda de plecare in traseu.
+Operatorul are posibilitatea sa stabileasca plecarile de la prima ora a zilei, astfel nu mai este necesara interventia acestuia pe timpul zilei.
